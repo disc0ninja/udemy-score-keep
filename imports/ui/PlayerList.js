@@ -6,8 +6,8 @@ export default class PlayerList extends React.Component {
   renderPlayers() {
     if (this.props.players.length === 0) {
       return (
-        <div>
-          <p>Add a player to get started!</p>
+        <div className="item">
+          <p className="item__message">Add a player to get started!</p>
         </div>
       );
     } else{
