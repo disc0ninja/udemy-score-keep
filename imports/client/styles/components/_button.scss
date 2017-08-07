@@ -1,13 +1,13 @@
 .button {
   background: transparent;
-  border: 1px solid #555555;
-  color: #555555;
+  border: 1px solid $button-primary;
+  color: $button-primary;
   cursor: pointer;
   font-weight: 600;
   line-height: 1;
-  margin-left: 1.3rem;
+  margin-left: $standard-size;
   outline: none;
-  padding: 1.3rem;
+  padding: $standard-size;
   transition: background .2s ease, transform .2s ease;
 
   &:hover, &:focus {
