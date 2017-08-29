@@ -9,10 +9,7 @@ export default class AddPlayer extends React.Component {
 
     if (playerName) {
       e.target.playerName.value = '';
-      Players.insert({
-        name: playerName,
-        score: 0
-      })
+      Players.insert({name: playerName, score: 0})
     }
   }
   render() {
@@ -20,7 +17,7 @@ export default class AddPlayer extends React.Component {
       <div className="wrapper">
         <div className="item">
           <form className="form" onSubmit={this.handleSubmit.bind(this)}>
-            <input className="form__input" type="text" name="playerName" placeholder="Player name" />
+            <input className="form__input" type="text" name="playerName" placeholder="Player name"/>
             <button className="button">Add Player</button>
           </form>
         </div>
